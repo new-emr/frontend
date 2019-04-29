@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { getAllPatient } from "../actions/patientActions";
 import PatientRecord from "./PatientRecord/PatientRecord";
 
-class PatientBoard extends Component {
+class RecordBoard extends Component {
   componentDidMount() {
     this.props.getAllPatient();
   }
@@ -45,7 +45,7 @@ class PatientBoard extends Component {
   }
 }
 
-PatientBoard.propTypes = {
+RecordBoard.propTypes = {
   getAllPatient: PropTypes.func.isRequired,
   patients: PropTypes.object.isRequired
 };
@@ -57,4 +57,4 @@ const mapStateToProps = state => ({
 export default connect(
   mapStateToProps,
   { getAllPatient }
-)(PatientBoard);
+)(RecordBoard);
