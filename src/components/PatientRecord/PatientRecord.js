@@ -16,9 +16,9 @@ class PatientRecord extends Component {
 
     return (
       <div className="card mb-1 bg-light">
-        <div className="card-header text-primary">ID: {record.patientId}</div>
+        <div className="card-header text-primary">ID: {record.id}</div>
         <div className="card-body bg-light">
-          <h5 className="card-title">{record.name}</h5>
+          <h5 className="card-title">{record.patientName}</h5>
           {features}
           {diseases}
         </div>

@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./store";
 import RecordBoard from "./components/RecordBoard";
+import RecordPopUp from "./components/PatientRecord/RecordPopUp";
 
 class App extends Component {
   render() {
@@ -19,7 +20,8 @@ class App extends Component {
         </Router>
       </Provider>
     );
-  }l
+  }
+  l;
 }
 
 export default App;

@@ -7,7 +7,7 @@ import {
 
 export const getAllPatient = () => async dispatch => {
     const res = await axios.get(
-      "https://emr-backend.herokuapp.com/api/getAllPatient"
+      "https://emr-backend.herokuapp.com/api/record/getAll"
     );
     dispatch({
       type: GET_ALL_PATIENT,
